@@ -17,6 +17,7 @@
 | Where work stopped and how to resume (and what is stale) | [`ESTADO-ATUAL-E-RETOMADA.md`](ESTADO-ATUAL-E-RETOMADA.md) |
 | Root causes, hypotheses, rejected evidence | [`HIPOTESES-E-INCIDENTES.md`](HIPOTESES-E-INCIDENTES.md) |
 | Provenance, licensing, method and limits | [`PROVENIENCIA.md`](PROVENIENCIA.md) |
+| Download the already-built **JARs** (pre-releases + SHA-256) | [`RELEASES.md`](RELEASES.md) |
 | Raw data (TSV) | [`data/`](data/) |
 | Verbatim original docs + SHA-256 index | [`archive/`](archive/) · [`archive/INDEX.md`](archive/INDEX.md) |
 
@@ -30,7 +31,7 @@
 - **Pace:** 11 alphas in ~3 days (Sep 9–12), then 26 qualification commits (Sep 13–15); tests 28 → 611; main code ≈1.3k → ≈39.9k lines.
 - **Build in use:** JAR `…catalyst-refinery-20260915T1300.24+1ec598dd1c-dirty` (built 2026-09-15 18:25) = `1ec598d` + uncommitted Catalyst work — see [`BUILD-EM-USO.md`](BUILD-EM-USO.md).
 - **Last commit:** `2c7b3f9` (2026-09-15 20:16 −03:00, Asphalt) — estimate **~67 %**.
-- **Warnings:** the local `COMECE-AQUI-TRANSFERENCIA.md` and `README-CURRENT.md` describe **Sep 12** and are stale; the working checkout sits on a side-branch commit; the root repository has no commits and a non-existent `origin`. **The backport source code is not on GitHub.**
+- **Warnings:** the local `COMECE-AQUI-TRANSFERENCIA.md` and `README-CURRENT.md` describe **Sep 12** and are stale; the working checkout sits on a side-branch commit; the root repository has no commits and a non-existent `origin`. **The backport source code is not on GitHub** (only the JARs, as Releases).
 - **Still open:** real-world upgrade, exact-pack compatibility, authenticated multiplayer, shaderpacks, soak/benchmarks, final art/audio, license resolution.
 
 ## Honest caveats

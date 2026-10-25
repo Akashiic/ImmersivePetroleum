@@ -17,6 +17,7 @@
 | Saber **onde parou e como retomar** (e o que está desatualizado) | [`ESTADO-ATUAL-E-RETOMADA.md`](ESTADO-ATUAL-E-RETOMADA.md) |
 | Ler as **causas-raiz, hipóteses e evidências rejeitadas** | [`HIPOTESES-E-INCIDENTES.md`](HIPOTESES-E-INCIDENTES.md) |
 | Saber **de onde vem cada fato**, licença e limites da investigação | [`PROVENIENCIA.md`](PROVENIENCIA.md) |
+| Baixar os **JARs** já construídos (pre-releases + SHA-256) | [`RELEASES.md`](RELEASES.md) |
 | Dados brutos (TSV) | [`data/`](data/) |
 | Documentos originais **verbatim** + índice com SHA-256 | [`archive/`](archive/) · [`archive/INDEX.md`](archive/INDEX.md) |
 
@@ -30,7 +31,7 @@
 6. **Ritmo real:** 11 alphas em ~3 dias (09–12/09), depois 26 commits de qualificação em 13–15/09; testes 28 → 611, código main ~1,3 mil → ~39,9 mil linhas.
 7. **Build em uso:** JAR `…catalyst-refinery-20260915T1300.24+1ec598dd1c-dirty` (15/09 18:25) = `1ec598d` + Catalyst não commitado — ver [`BUILD-EM-USO.md`](BUILD-EM-USO.md). **Último commit:** `2c7b3f9` (15/09 20:16 −03, Asphalt). Estimativa **~67 %**.
 8. **Alerta:** `COMECE-AQUI-TRANSFERENCIA.md` e `README-CURRENT.md` do projeto local descrevem **12/09** e estão **defasados**; o checkout de trabalho está em um commit de ramo lateral.
-9. **Só local:** o repositório da raiz tem `.git` sem commits e `origin` inexistente (`Akashiic/Immersive-Petroleum-1.7.10`); **o código do backport não está no GitHub**.
+9. **Só local:** o repositório da raiz tem `.git` sem commits e `origin` inexistente (`Akashiic/Immersive-Petroleum-1.7.10`); **o código-fonte do backport não está no GitHub** (só os JARs, em Releases).
 10. **Falta:** mundo real, pack exato, multiplayer autenticado, shaders, soak/benchmarks, arte/áudio finais, resolução de licença.
 
 ## Estrutura

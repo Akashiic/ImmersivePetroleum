@@ -101,10 +101,11 @@ O **documento mais confiável do estado** é `docs/TOTAL-PROGRESS.md` no commit 
 |---|---|
 | Fork `Akashiic/ImmersivePetroleum` (de `TwistedGate/ImmersivePetroleum`) | **Criado.** Branch padrão continua `1.21.1`, intocada |
 | Este dossiê | **Publicado** no branch `1.7.10-backport` do fork, pasta `docs/backport-1.7.10/` |
-| Código-fonte do backport, histórico git, tags, JARs, ZIP de handoff, logs | **Não publicados.** Decisão deliberada: o fork é de um projeto *All Rights Reserved*; publicar o código-fonte de um backport clean-room exige decisão do autor sobre repositório, licença e visibilidade |
+| JARs já construídos (alpha.2–10 + build em uso `-dirty`) | **Publicados como pre-releases** do fork em 25/10/2026 — ver [`RELEASES.md`](RELEASES.md). As tags `1.7.10-0.1.0-alpha.N` apontam para o commit do dossiê, não para o commit-fonte |
+| Código-fonte do backport, histórico git, tags do projeto, ZIP de handoff, logs | **Não publicados.** Decisão deliberada: o fork é de um projeto *All Rights Reserved*; publicar o código-fonte de um backport clean-room exige decisão do autor sobre repositório, licença e visibilidade |
 | Repositório `Akashiic/Immersive-Petroleum-1.7.10` | **Não existe** (o `origin` local aponta para ele) |
 
-Se o autor quiser publicar o código: criar o repositório (privado primeiro), `git remote set-url origin …`, enviar `master` e as 11 tags; o histórico de 38 commits é praticamente linear (um único commit em ramo lateral). Os JARs de `dist/` e o ZIP de handoff (~95 MiB) não deveriam entrar no git — use *Releases* com `SHA256SUMS` (hashes em [`data/release-jars.tsv`](data/release-jars.tsv)).
+Se o autor quiser publicar o código: criar o repositório (privado primeiro), `git remote set-url origin …`, enviar `master` e as 11 tags; o histórico de 38 commits é praticamente linear (um único commit em ramo lateral). O ZIP de handoff (~95 MiB) e os JARs não devem entrar no git — os JARs já estão em *Releases* ([`RELEASES.md`](RELEASES.md); hashes em [`data/release-jars.tsv`](data/release-jars.tsv)).
 
 ## 8. Comandos úteis (PowerShell)
 
