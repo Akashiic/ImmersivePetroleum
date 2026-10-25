@@ -1,0 +1,20 @@
+﻿[
+    {
+        "name":  "ImmersivePetroleum-1.21.1",
+        "head":  "e6cb01df32d4adfd096d49c02bb91e60fef56a15",
+        "branch":  "1.21.1",
+        "remote":  "https://github.com/TwistedGate/ImmersivePetroleum.git"
+    },
+    {
+        "name":  "ImmersivePetroleum-1.12.2",
+        "head":  "670050389c777e47e8beda18bf41cb6e819b66d4",
+        "branch":  "1.12.2",
+        "remote":  "https://github.com/TwistedGate/ImmersivePetroleum.git"
+    },
+    {
+        "name":  "ImmersivePetroleum-legacy-master",
+        "head":  "dce4c3b8d2b59d30357a006cf1a5fd1640e61a30",
+        "branch":  "master",
+        "remote":  "https://github.com/Flaxbeard/ImmersivePetroleum.git"
+    }
+]

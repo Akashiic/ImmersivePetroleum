@@ -1,0 +1,12 @@
+{
+  "status": "RELEASE_JAR_AUDIT_PASS",
+  "jar": "C:\\Users\\User\\Desktop\\Codex\\immersivepetroleum-backport\\dist\\0.1.0-alpha.10\\immersivepetroleum-0.1.0-alpha.10.jar",
+  "version": "0.1.0-alpha.10",
+  "bytes": 452282,
+  "sha256": "271359f01e011aba5ee03121da085c51e0c9587143cd94d36e8c0c630ae9b20a",
+  "classCount": 228,
+  "classMajor": 52,
+  "embeddedForeignClasses": 0,
+  "collisionFixtures": 0,
+  "scope": "Archive structure and bytecode only; source commit and runtime approval are separate evidence."
+}

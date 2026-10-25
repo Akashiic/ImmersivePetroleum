@@ -1,0 +1,17 @@
+[en_US]
+tile.immersivepetroleum.gasGenerator.name=Portable Gas Generator
+gasgenerator.immersivepetroleum.contents=Generator: %s / %s RF, %s / 8000 mB, %s paid ticks remaining
+gasgenerator.immersivepetroleum.help=Fuel from above; RF from the front or one LV/MV wire. Redstone pauses. Sneak to pick up.
+gasgenerator.immersivepetroleum.active=Generating
+gasgenerator.immersivepetroleum.paused=Paid fuel batch paused
+gasgenerator.immersivepetroleum.idle=Waiting for fuel
+gasgenerator.immersivepetroleum.quarantined=Stored state requires recovery
+
+[pt_BR]
+tile.immersivepetroleum.gasGenerator.name=Gerador portátil a gasolina
+gasgenerator.immersivepetroleum.contents=Gerador: %s / %s RF, %s / 8000 mB, %s ticks de geração já pagos
+gasgenerator.immersivepetroleum.help=Combustível por cima; RF pela frente ou um cabo LV/MV. Redstone pausa. Agache para recolher.
+gasgenerator.immersivepetroleum.active=Gerando energia
+gasgenerator.immersivepetroleum.paused=Lote de combustível pago em pausa
+gasgenerator.immersivepetroleum.idle=Aguardando combustível
+gasgenerator.immersivepetroleum.quarantined=Estado armazenado exige recuperação

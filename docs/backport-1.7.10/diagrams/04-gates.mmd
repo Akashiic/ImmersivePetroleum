@@ -1,0 +1,16 @@
+flowchart LR
+    G0["G0 Congelamento de evidências<br/>PASS · 161/161 hashes"]:::pass --> G1["G1 Build reprodutível<br/>PASS · classe major 52"]:::pass
+    G1 --> G2["G2 Runtime esqueleto<br/>PARCIAL · servidor+cliente OK<br/>mundo real BLOQUEADO"]:::part
+    G2 --> G3["G3 Reservatório + storage<br/>PASS · G3A/G3B"]:::pass
+    G3 --> G4["G4 Fundação / Pumpjack<br/>PASS exceto G4B3B arte final"]:::part
+    G4 --> G5["G5 Distillation Tower<br/>PASS exceto G5C2 UX/arte final"]:::part
+    G5 --> G6["G6 Extração moderna<br/>Derrick, Seismic, Well, Oil Tank<br/>PASS em laboratório"]:::part
+    G6 --> G7["G7 Processamento moderno<br/>Coker, Hydro, Catalyst, Gas, Lube, Flare<br/>PASS em laboratório"]:::part
+    G7 --> G8["G8 Mobilidade / construção<br/>Motorboat, Projector, Asphalt, Molotov<br/>PASS em laboratório"]:::part
+    G8 --> G9["G9 Matriz de compatibilidade<br/>NÃO INICIADO (pack real)"]:::plan
+    G9 --> G10["G10 Performance / soak / corrupção<br/>NÃO INICIADO"]:::plan
+    G10 --> G11["G11 Release candidate<br/>BLOQUEADO · licença/assets"]:::block
+    classDef pass fill:#d4edda,stroke:#2e7d32,color:#111
+    classDef part fill:#fff3cd,stroke:#b8860b,color:#111
+    classDef plan fill:#e9ecef,stroke:#6c757d,color:#111
+    classDef block fill:#f8d7da,stroke:#b02a37,color:#111

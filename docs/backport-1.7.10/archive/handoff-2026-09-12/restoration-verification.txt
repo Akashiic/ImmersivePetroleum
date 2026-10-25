@@ -1,0 +1,5 @@
+HANDOFF_RESTORATION_PASS
+commit=db6b77d63c91696ed492b8d069d529cda450a9ee
+cleanTree=true
+gitFsck=true
+restoredCheckout=C:\Users\User\Desktop\Codex\immersivepetroleum-backport\engineering-handoff-validation\20260912T200922Z

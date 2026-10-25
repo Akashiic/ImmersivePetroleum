@@ -1,0 +1,71 @@
+Shared integration (parent-owned):
+preInit: common.projector.PetroleumProjectorContent.registerAll();
+init: common.projector.PetroleumProjectorContent.registerRecipes();
+client init: client.projector.ProjectorClient.register();
+server started: common.projector.ProjectorProbe.runIfRequested(server);
+Configs: PetroleumConfig.enableProjector=true; projectorRenderDistance=64; projectorChecksPerTick=128.
+The checks-per-tick field is used on both the client scanner and the separate server creative builder.
+Item ID projector; internal SimpleNetworkWrapper channel IPProjector (11 characters), discriminator0 server-only.
+No GUI ID/container registration; GUI uses the held-item action protocol and ordinary inventory synchronization.
+Client probe is registered automatically only with -Dimmersivepetroleum.projectorRendererProbe=smoke.
+Dedicated runner: tools/run-projector-campaign.ps1; no Gradle/campaign executed by the author.
+
+[en_US]
+item.immersivepetroleum.projector.name=Multiblock Projector
+projector.immersivepetroleum.title=MULTIBLOCK PROJECTOR
+projector.immersivepetroleum.structures=structures
+projector.immersivepetroleum.select=Select a structure
+projector.immersivepetroleum.selection=Selection mode
+projector.immersivepetroleum.projection=Projection mode
+projector.immersivepetroleum.cancel=Cancel
+projector.immersivepetroleum.confirm=Project
+projector.immersivepetroleum.mirror=Mirror
+projector.immersivepetroleum.model=Model
+projector.immersivepetroleum.materials=Materials
+projector.immersivepetroleum.auto=Auto layer
+projector.immersivepetroleum.layer=Layer
+projector.immersivepetroleum.scroll=(scroll)
+projector.immersivepetroleum.more=more materials
+projector.immersivepetroleum.pinned=Projection anchored at %s, %s, %s
+projector.immersivepetroleum.uninitialized=Awaiting server initialization, or invalid settings preserved
+projector.immersivepetroleum.help=P: select. F: mirror. Sneak+wheel: rotate. Sneak+use: unpin / switch mode.
+projector.immersivepetroleum.legend=Blue: missing | Green: verified | Red: wrong | Purple: pending
+projector.immersivepetroleum.checking=Checking blocks:
+projector.immersivepetroleum.unloaded=Waiting for loaded chunks
+projector.immersivepetroleum.candidate=Amber: material candidate; IE API does not certify orientation
+projector.immersivepetroleum.build_started=Creative construction started
+projector.immersivepetroleum.build_wait=Creative construction is waiting for a loaded chunk
+projector.immersivepetroleum.build_done=Creative construction: %s placed, %s occupied or denied
+projector.immersivepetroleum.build_stopped=Creative construction stopped after a block callback failed
+key.immersivepetroleum.projector.flip=Mirror projector
+key.immersivepetroleum.projector.menu=Configure projector
+
+[pt_BR]
+item.immersivepetroleum.projector.name=Projetor de Multiblocos
+projector.immersivepetroleum.title=PROJETOR DE MULTIBLOCOS
+projector.immersivepetroleum.structures=estruturas
+projector.immersivepetroleum.select=Selecione uma estrutura
+projector.immersivepetroleum.selection=Modo de seleção
+projector.immersivepetroleum.projection=Modo de projeção
+projector.immersivepetroleum.cancel=Cancelar
+projector.immersivepetroleum.confirm=Projetar
+projector.immersivepetroleum.mirror=Espelhar
+projector.immersivepetroleum.model=Modelo
+projector.immersivepetroleum.materials=Materiais
+projector.immersivepetroleum.auto=Camada automática
+projector.immersivepetroleum.layer=Camada
+projector.immersivepetroleum.scroll=(rolagem)
+projector.immersivepetroleum.more=outros materiais
+projector.immersivepetroleum.pinned=Projeção fixada em %s, %s, %s
+projector.immersivepetroleum.uninitialized=Aguardando inicialização do servidor, ou configuração inválida preservada
+projector.immersivepetroleum.help=P: selecionar. F: espelhar. Agachar+roda: girar. Agachar+usar: soltar / trocar modo.
+projector.immersivepetroleum.legend=Azul: falta | Verde: verificado | Vermelho: errado | Roxo: pendente
+projector.immersivepetroleum.checking=Verificando blocos:
+projector.immersivepetroleum.unloaded=Aguardando chunks carregados
+projector.immersivepetroleum.candidate=Âmbar: material candidato; API IE não certifica orientação
+projector.immersivepetroleum.build_started=Construção criativa iniciada
+projector.immersivepetroleum.build_wait=A construção criativa está aguardando um chunk carregado
+projector.immersivepetroleum.build_done=Construção criativa: %s colocados, %s ocupados ou recusados
+projector.immersivepetroleum.build_stopped=Construção criativa interrompida após falha em callback de bloco
+key.immersivepetroleum.projector.flip=Espelhar projeção
+key.immersivepetroleum.projector.menu=Configurar projetor

@@ -1,0 +1,31 @@
+Integration hooks (parent-owned shared files):
+preInit: flaxbeard.immersivepetroleum.common.flarestack.PetroleumFlarestackContent.registerAll();
+init: flaxbeard.immersivepetroleum.common.flarestack.PetroleumFlarestackContent.registerRecipes();
+client init: flaxbeard.immersivepetroleum.client.flarestack.FlarestackClient.register();
+server started: flaxbeard.immersivepetroleum.common.flarestack.FlarestackProbe.runIfRequested(server);
+config: boolean PetroleumConfig.enableFlarestack = true;
+optional whitelist configuration: FlarestackFuels.configure(String[]); defaults from FlarestackFuels.defaults().
+registry IDs: block/item flarestack; tile immersivepetroleum:flarestack. No GUI/network registration needed (none upstream).
+No sound registration or redistributed sound/texture asset: references installed minecraft:fire.fire and vanilla atlas.
+
+[en_US]
+tile.immersivepetroleum.flarestack.name=Flarestack
+flarestack.immersivepetroleum.contents=Flarestack: %s / 250 mB; last disposal %s mB/t
+flarestack.immersivepetroleum.active=Disposing fuel
+flarestack.immersivepetroleum.idle=Pilot flame / awaiting fuel or signal
+flarestack.immersivepetroleum.normal=Normal redstone: signal strength controls disposal
+flarestack.immersivepetroleum.inverted=Inverted redstone: no signal disposes 250 mB/t
+flarestack.immersivepetroleum.quarantined=State preserved; operation disabled
+flarestack.immersivepetroleum.help=Two blocks tall. Feed from below. IE hammer inverts redstone.
+death.attack.immersivepetroleum.flarestack=%1$s was burned by a flarestack
+
+[pt_BR]
+tile.immersivepetroleum.flarestack.name=Queimador de Excedentes
+flarestack.immersivepetroleum.contents=Queimador: %s / 250 mB; último descarte %s mB/t
+flarestack.immersivepetroleum.active=Descartando combustível
+flarestack.immersivepetroleum.idle=Chama piloto / aguardando combustível ou sinal
+flarestack.immersivepetroleum.normal=Redstone normal: intensidade do sinal controla o descarte
+flarestack.immersivepetroleum.inverted=Redstone invertida: sem sinal descarta 250 mB/t
+flarestack.immersivepetroleum.quarantined=Estado preservado; operação desativada
+flarestack.immersivepetroleum.help=Dois blocos de altura. Alimente por baixo. Martelo IE inverte a redstone.
+death.attack.immersivepetroleum.flarestack=%1$s foi queimado por um queimador de excedentes

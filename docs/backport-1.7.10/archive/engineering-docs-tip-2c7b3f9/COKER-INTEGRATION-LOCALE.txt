@@ -1,0 +1,44 @@
+Shared integration contract (root owns registries/proxies):
+PetroleumBlocks.COKER_UNIT_MULTIBLOCK = new BlockCokerUnitMultiblock(), no ItemBlock, id coker_unit_multiblock.
+GameRegistry.registerTileEntity(TileEntityCokerUnit.class, "immersivepetroleum:coker_unit").
+MultiblockHandler.registerMultiblock(MultiblockCokerUnit.INSTANCE).
+CommonProxy.GUI_COKER_UNIT = 2; lookup must check player.worldObj, world.blockExists and master.isUseableByPlayer.
+ContainerCokerUnit(player.inventory, master); GuiCokerUnit(player.inventory, master).
+ClientRegistry.bindTileEntitySpecialRenderer(TileEntityCokerUnit.class, new TileRenderCokerUnit()).
+CokerUnitProbe.runIfRequested(server) at the existing server-started probe boundary.
+CokerUnitRendererProbe(renderer): register on Forge and FML buses only when PROPERTY == smoke.
+Client probe JVM property: immersivepetroleum.cokerRendererProbe=smoke.
+PetroleumItems.BITUMEN, PETCOKE, COKER_RECOVERY and PetroleumConfig.enableCokerUnit are required.
+Recovery item tag: immersivepetroleumCokerRecovery. It is a forensic record, without an automatic resource restoration API.
+
+en_US.lang:
+container.immersivepetroleum.cokerUnit=Coker Unit
+tile.immersivepetroleum.cokerUnitMultiblock.name=Coker Unit
+gui.immersivepetroleum.coker.feed=Feed
+gui.immersivepetroleum.coker.water=Wash water
+gui.immersivepetroleum.coker.residue=Sulfurized diesel
+gui.immersivepetroleum.coker.raw=Raw batches
+gui.immersivepetroleum.coker.processed=Processed batches
+gui.immersivepetroleum.coker.fluid=Chamber fluid
+gui.immersivepetroleum.coker.quarantined=Sealed
+gui.immersivepetroleum.coker.phase.0=Standby
+gui.immersivepetroleum.coker.phase.1=Processing
+gui.immersivepetroleum.coker.phase.2=Draining residue
+gui.immersivepetroleum.coker.phase.3=Flooding with water
+gui.immersivepetroleum.coker.phase.4=Discharging petroleum coke
+
+pt_BR.lang:
+container.immersivepetroleum.cokerUnit=Unidade de coqueamento
+tile.immersivepetroleum.cokerUnitMultiblock.name=Unidade de coqueamento
+gui.immersivepetroleum.coker.feed=Carga
+gui.immersivepetroleum.coker.water=Água de lavagem
+gui.immersivepetroleum.coker.residue=Diesel sulfurado
+gui.immersivepetroleum.coker.raw=Lotes brutos
+gui.immersivepetroleum.coker.processed=Lotes processados
+gui.immersivepetroleum.coker.fluid=Fluido da câmara
+gui.immersivepetroleum.coker.quarantined=Selada
+gui.immersivepetroleum.coker.phase.0=Em espera
+gui.immersivepetroleum.coker.phase.1=Processando
+gui.immersivepetroleum.coker.phase.2=Drenando resíduo
+gui.immersivepetroleum.coker.phase.3=Enchendo com água
+gui.immersivepetroleum.coker.phase.4=Descarregando coque de petróleo

@@ -1,0 +1,18 @@
+flowchart TB
+    ROOT["Pasta da raiz<br/>immersivepetroleum-backport<br/>.git próprio · 0 commits · origin → Akashiic/Immersive-Petroleum-1.7.10 (inexistente)"]
+    ROOT --> WORK["work/ImmersivePetroleum-1.7.10<br/>38 commits · 11 tags · 37 branches"]
+    ROOT --> DOCS["project-docs · engineering-handoff<br/>evidence · dist · tools · upstream"]
+    WORK --> TIP["Ponta mainline 2c7b3f9 (15/09)<br/>branches asphalt / lubrication"]
+    WORK --> CO["Checkout atual: 42b568f<br/>ramo lateral potion-id (DEFASADO)"]
+    WORK --> WT1["worktree catalyst @1ec598d<br/>WIP não commitado = FONTE DO JAR EM USO"]
+    WT1 --> JAR["JAR do autor · 15/09 18:25<br/>…catalyst-refinery….24+1ec598dd1c-dirty<br/>SHA-256 d5065d03…"]
+    WORK --> WT2["worktree molotov @fbcb919<br/>WIP não commitado"]
+    WORK --> WT3["worktree nei = ponta 2c7b3f9, limpo<br/>(nome enganoso)"]
+    WORK --> WT4["worktree pumpjack-final @0b7ac71<br/>probes não commitados"]
+    DOCS --> STALE["COMECE-AQUI + README-CURRENT<br/>DEFASADOS (descrevem 12/09 / alpha.10)"]
+    classDef warn fill:#fff3cd,stroke:#b8860b,color:#111
+    classDef bad fill:#f8d7da,stroke:#b02a37,color:#111
+    class CO,WT1,WT2,WT4 warn
+    classDef inuse fill:#d0e4ff,stroke:#1d5fa8,color:#111
+    class JAR inuse
+    class STALE,ROOT bad

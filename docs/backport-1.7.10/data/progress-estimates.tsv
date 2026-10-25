@@ -1,0 +1,22 @@
+date	checkpoint	estimate_pct	range_low	range_high	tests	suites
+2026-09-12	alpha.10 baseline (TOTAL-PROGRESS)	35	30	40	245	40
+2026-09-13	Reavaliação de continuidade	45	40	50		
+2026-09-13	Campanhas e integração	50	45	55		
+2026-09-13	Entrega de subprodutos (DT)	50	45	55	475	73
+2026-09-14	NEI e consistência do catálogo	51	45	57	495	77
+2026-09-14	Coker customizado	52	46	58	528	83
+2026-09-14	Projector	53	47	60	546	87
+2026-09-14	Garrafa de gasolina e Molotov	54	48	61	548	87
+2026-09-14	IE potion IDs / World Fluids / Lubrication	55	49	62	562	88
+2026-09-14	Seismic Survey	56	50	63	565	90
+2026-09-14	Well / WellPipe	57	51	64	572	92
+2026-09-14	Derrick directional grid / survival	58	52	65	572	92
+2026-09-14	Oil Tank modern storage	59	53	66	575	93
+2026-09-14	Hydrotreater modern processing	60	54	67	579	94
+2026-09-14	Gas Generator	61	55	68	585	95
+2026-09-14	Flarestack analog utility	62	56	69	589	96
+2026-09-15	Motorboat / Speedboat	63	57	70	594	97
+2026-09-15	Pumpjack + Reservoir extraction	64	58	71	594	97
+2026-09-15	Material Chain / legacy target adaptations	65	59	72	598	98
+2026-09-15	Catalyst Refinery chemistry	66	60	73	611	100
+2026-09-15	Asphalt movement/presentation	67	61	74	611	100

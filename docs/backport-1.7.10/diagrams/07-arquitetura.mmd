@@ -1,0 +1,29 @@
+flowchart TB
+    subgraph REF["Referências (somente evidência)"]
+        M121["1.21.1 · semântica moderna"]
+        M112["1.12.2 · ponte"]
+    end
+    REF --> FAC["Fachadas de portabilidade"]
+    subgraph DOM["Domínio puro (testável sem Minecraft)"]
+        RES["api.reservoir<br/>tipos imutáveis + campo determinístico"]
+        TXN["Transações SIMULATE / EXECUTE<br/>aritmética em long"]
+    end
+    subgraph FORGE["Adaptadores Forge 1.7.10 (servidor autoritativo)"]
+        STO["common.storage<br/>WorldSavedData · shards 512×512 · NBT versionado"]
+        MB["common.multiblock<br/>formação transacional + rollback"]
+        PRC["common.processing<br/>Pumpjack · Derrick · Torre · Coker · Hydro · Catalyst"]
+        FLD["common.fluid<br/>registro de fluidos sem colisão"]
+        CMP["common.compat<br/>NEI · CraftTweaker · drilloil (ASM)"]
+    end
+    subgraph CLI["Cliente (isolado do servidor)"]
+        RND["client.render<br/>malha estática + TESR dinâmico"]
+        GUI["client.gui<br/>somente apresentação"]
+    end
+    FAC --> DOM
+    DOM --> FORGE
+    FORGE -. "estado sincronizado" .-> CLI
+    FORGE --> IE["Immersive Engineering 0.7.9 (garden-cloche-test-2)"]
+    CLI --> ANG["Angelica 2.2.8 · GTNHLib 0.11.41 · UniMixins 0.3.1"]
+    IE --> RT["Forge 10.13.4.1614 · Minecraft 1.7.10 · Java 8 bytecode"]
+    ANG --> RT
+    COREMOD["Coremod ASM PetroleumDrillCorePlugin<br/>drill-oil · potion-ID · refinery/catalyst"] -. "transforma" .-> IE

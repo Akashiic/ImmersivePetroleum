@@ -1,0 +1,39 @@
+seq	commit	date_iso	parents	tags	branches_at_tip	files_changed	insertions	deletions	main_java_files	main_java_lines	test_java_files	test_java_lines	docs_files	tools_files	subject
+1	fd97d51	2026-09-09 19:51:05 -0300		0.1.0-alpha.0	master	19	924	0	1	34	0	0	5	1	chore: establish audited 1.7.10 backport baseline
+2	3dd5dcf	2026-09-10 00:46:54 -0300	fd97d51	0.1.0-alpha.1	feature/reservoir-v1	30	2262	20	13	1271	5	424	8	5	feat: establish deterministic reservoir core and safe persistence
+3	598ee10	2026-09-10 11:19:40 -0300	3dd5dcf	0.1.0-alpha.2	feature/reservoir-genesis-v1	19	1554	28	22	2282	8	712	10	6	feat: add deterministic reservoir genesis
+4	42f1239	2026-09-10 15:39:47 -0300	598ee10	0.1.0-alpha.3	feature/industrial-foundation-v1	15	861	10	27	2840	10	783	12	8	feat: establish collision-safe petroleum fluid foundation
+5	3d4ba53	2026-09-10 22:27:40 -0300	42f1239	0.1.0-alpha.4	feature/pumpjack-transaction-v1	16	1950	10	32	3840	13	1535	14	9	feat: add audited Pumpjack transaction kernel
+6	cf4364b	2026-09-11 01:18:03 -0300	3d4ba53	0.1.0-alpha.5	feature/pumpjack-well-v1	20	1617	7	42	4830	16	1942	16	10	feat: add audited Well and WellPipe infrastructure
+7	67e5ab0	2026-09-11 03:19:47 -0300	cf4364b	0.1.0-alpha.6	feature/pumpjack-multiblock-v1	21	1903	28	50	6434	18	2043	18	11	feat: add audited Pumpjack multiblock runtime
+8	64d7932	2026-09-11 14:20:01 -0300	67e5ab0	0.1.0-alpha.7	feature/pumpjack-renderer-v1	17	969	14	55	7095	21	2246	20	11	feat: add audited Pumpjack renderer foundation
+9	759d3a5	2026-09-11 23:39:40 -0300	64d7932	0.1.0-alpha.8	feature/distillation-tower-v1	43	4466	10	71	9919	27	3113	22	15	feat: add audited Distillation Tower core
+10	cff03f9	2026-09-12 03:16:47 -0300	759d3a5	0.1.0-alpha.9	feature/distillation-renderer-v1	14	692	11	73	10467	28	3170	24	15	feat: add audited Distillation Tower renderer foundation
+11	dc6587d	2026-09-12 14:04:35 -0300	cff03f9	0.1.0-alpha.10		73	8216	199	95	15280	40	5217	29	23	Implement Derrick extraction, audited lifecycle and initial controls
+12	db6b77d	2026-09-12 17:09:22 -0300	dc6587d		feature/derrick-v1	273	24646	29	272	33668	64	6529	57	45	Checkpoint complete engineering handoff with audited WIP and validation
+13	6339c71	2026-09-13 00:47:04 -0300	db6b77d		feature/hydro-persistence-hardening-20260913	6	210	4	272	33675	65	6626	59	45	Harden Hydrotreater pending rollback and document Crucible Java 21 target
+14	6475315	2026-09-13 02:33:43 -0300	6339c71		feature/runtime-qualification-20260913	20	428	19	272	33720	65	6626	62	47	Qualify industrial runtime gates and add recoverable local task supervision
+15	9ad549c	2026-09-13 06:28:12 -0300	6475315			14	189	48	272	33762	66	6672	63	47	Integrate Motorboat and verify server-safe passenger lifecycle
+16	c23571f	2026-09-13 07:41:54 -0300	9ad549c			13	357	11	273	33945	67	6696	64	48	Connect optional recipe catalogs and verify real machine snapshots across restart
+17	16e7bab	2026-09-13 09:02:39 -0300	c23571f		feature/premium-integration-20260913	12	335	36	273	34080	69	6819	65	48	Preserve admitted recipes across reload and reject ambiguous state envelopes
+18	926c17e	2026-09-13 12:35:01 -0300	16e7bab			7	323	13	274	34189	70	6970	66	48	Preserve malformed tower payloads and verify real resource quarantine
+19	2aed5b5	2026-09-13 15:10:13 -0300	926c17e		feature/tower-integrity-20260913T144218Z	18	1460	63	281	35055	74	7431	67	48	Preserve tower byproducts across cancellation restart and uncertain callbacks
+20	7f86f4d	2026-09-13 21:39:18 -0300	2aed5b5		feature/nei-qualification-20260913T190723Z	19	1014	52	285	35460	78	7649	68	52	Qualify native NEI recipes layouts navigation and revision-safe refresh
+21	fbcb919	2026-09-14 00:43:13 -0300	7f86f4d		feature/coker-recipes-20260914T004009Z,feature/molotov-qualification-20260914T033810Z	34	1761	144	294	36284	84	8039	70	55	Integrate persistent custom Coker contracts scripts metadata and native UI
+22	3d645b5	2026-09-14 12:14:37 -0300	fbcb919		feature/projector-qualification-20260914T033754Z	23	718	55	299	36694	88	8221	71	55	Qualify Projector ownership placement templates and native client UX
+23	5bd89e5	2026-09-14 13:47:00 -0300	3d645b5			12	134	66	299	36747	88	8223	72	55	Qualify gasoline bottle and Molotov persistence transactions and client
+24	42b568f	2026-09-14 14:06:07 -0300	2aed5b5		feature/potion-id-integrity-20260913T184254Z	8	307	5	282	35164	75	7567	68	48	Repair pinned IE potion IDs and qualify world fluids and lubrication
+25	a4182f9	2026-09-14 14:32:34 -0300	5bd89e5		feature/molotov-qualification-20260914T1205	8	321	4	300	36856	89	8359	73	55	Integrate pinned IE potion ID repair and requalify fluids and lubrication
+26	58f7b7b	2026-09-14 16:48:23 -0300	a4182f9		feature/seismic-qualification-20260914T1430	14	475	13	301	37162	91	8440	74	55	Qualify seismic survey persistence maps and client UX
+27	23e45b2	2026-09-14 17:20:25 -0300	58f7b7b		feature/well-qualification-20260914T1640	9	328	80	301	37190	93	8534	75	55	Qualify Well infrastructure persistence and lifecycle
+28	56ea3a5	2026-09-14 19:25:30 -0300	23e45b2		feature/derrick-grid-qualification-20260914T1715	10	223	20	302	37341	93	8534	76	55	Qualify Derrick directional grid survival and client editor
+29	c197971	2026-09-14 20:26:30 -0300	56ea3a5		feature/oiltank-qualification-20260914T1925	9	125	11	302	37356	94	8578	77	55	Qualify Oil Tank storage lifecycle and persistent envelope
+30	7672529	2026-09-14 20:56:31 -0300	c197971		feature/hydrotreater-qualification-20260914T2025	8	132	13	302	37368	95	8641	78	55	Qualify Hydrotreater persistence runtime and Angelica client
+31	f717ba5	2026-09-14 22:14:01 -0300	7672529		feature/gas-generator-qualification-20260914T2100	10	340	16	303	37569	96	8706	79	55	Qualify Gas Generator persistence wires and client lifecycle
+32	b19fd88	2026-09-14 22:36:17 -0300	f717ba5			1	16	8	303	37569	96	8706	79	55	Harden guarded task receipts against transient Windows locks
+33	59e2d9c	2026-09-14 23:00:49 -0300	b19fd88		feature/flarestack-qualification-20260914T2215	12	308	17	304	37782	97	8747	80	55	Qualify Flarestack persistence analog runtime and client lifecycle
+34	0b7ac71	2026-09-15 00:26:12 -0300	59e2d9c		feature/motorboat-qualification-20260914T2300,feature/pumpjack-final-20260915T1421Z	12	299	34	304	37922	98	8808	81	55	Qualify Motorboat modern semantics and client lifecycle
+35	e898344	2026-09-15 01:40:49 -0300	0b7ac71		feature/pumpjack-reservoir-qualification-20260915T0030	11	360	302	304	37971	98	8808	82	55	Qualify Pumpjack reservoir extraction and client rendering
+36	1ec598d	2026-09-15 12:29:36 -0300	e898344		feature/catalyst-refinery-isolated-20260915T1700,feature/extraction-journey-20260915T1200,feature/material-chain-qualification-20260915T0150	24	993	5	314	38831	99	8855	83	55	Qualify legacy material chain and transactional placement
+37	9879cdc	2026-09-15 18:42:47 -0300	1ec598d		feature/catalyst-refinery-20260915T1300	20	1291	11	318	39664	101	9110	84	56	Qualify Catalyst Refinery chemistry and IE17 adapter
+38	2c7b3f9	2026-09-15 20:16:26 -0300	9879cdc		feature/asphalt-qualification-20260915T1840,feature/lubrication-qualification-20260915T2015	13	250	5	321	39869	101	9110	85	56	Qualify Asphalt movement and client presentation

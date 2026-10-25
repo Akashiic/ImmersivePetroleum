@@ -1,0 +1,10 @@
+flowchart TB
+    S1["1 · Binários reais do runtime Forbidden Series<br/>e comportamento observado"] --> S2["2 · Código-fonte próprio do backport<br/>(IE 1.7.10 + este mod)"]
+    S2 --> S3["3 · TwistedGate ImmersivePetroleum 1.21.1<br/>semântica moderna · congelado em e6cb01df"]
+    S3 --> S4["4 · TwistedGate 1.12.2<br/>ponte de migração · 67005038"]
+    S4 --> S5["5 · Flaxbeard (legado) master<br/>arqueologia histórica · dce4c3b8"]
+    S5 --> S6["6 · Documentação exata de Forge / IE / GTNHLib"]
+    S6 --> S7["7 · Logs, profiling e testes reprodutíveis"]
+    S7 --> S8["8 · Inferência — só rotulada e com plano de validação"]
+    L["Licença: upstream = apenas EVIDÊNCIA<br/>(sem licença raiz; CurseForge All Rights Reserved)<br/>→ código e assets clean-room"]:::lic -.- S3
+    classDef lic fill:#f8d7da,stroke:#b02a37,color:#111

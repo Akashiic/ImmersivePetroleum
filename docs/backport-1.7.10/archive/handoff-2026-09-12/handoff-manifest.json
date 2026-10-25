@@ -1,0 +1,42 @@
+{
+  "status": "HANDOFF_NOT_RELEASE",
+  "generatedUtc": "2026-09-12T20:09:36.1094472Z",
+  "project": "C:\\Users\\User\\Desktop\\Codex\\immersivepetroleum-backport\\work\\ImmersivePetroleum-1.7.10",
+  "branch": "feature/derrick-v1",
+  "commit": "db6b77d63c91696ed492b8d069d529cda450a9ee",
+  "priorBaseline": "dc6587d2bbaf727acee241b6560813be26b89e44",
+  "javaHome": "C:\\Program Files\\Java\\jdk-1.8",
+  "entrypoint": "docs/HANDOFF-2026-09-12.md",
+  "validation": "docs/HANDOFF-VALIDATION.md",
+  "finalCheckLog": "run/handoff-full-check.log",
+  "productionApproved": false,
+  "cleanGitCheckpoint": true,
+  "restoredBundleVerified": true,
+  "upstreams": [
+    {
+      "name": "ImmersiveEngineering-1.21.1",
+      "commit": "75a27f03e4243544243567e8d5c38d336f4f10f4",
+      "archive": "upstream/ImmersiveEngineering-1.21.1.zip",
+      "purpose": "local reference, not a redistribution license"
+    },
+    {
+      "name": "ImmersivePetroleum-1.12.2",
+      "commit": "670050389c777e47e8beda18bf41cb6e819b66d4",
+      "archive": "upstream/ImmersivePetroleum-1.12.2.zip",
+      "purpose": "local reference, not a redistribution license"
+    },
+    {
+      "name": "ImmersivePetroleum-1.21.1",
+      "commit": "e6cb01df32d4adfd096d49c02bb91e60fef56a15",
+      "archive": "upstream/ImmersivePetroleum-1.21.1.zip",
+      "purpose": "local reference, not a redistribution license"
+    },
+    {
+      "name": "ImmersivePetroleum-legacy-master",
+      "commit": "dce4c3b8d2b59d30357a006cf1a5fd1640e61a30",
+      "archive": "upstream/ImmersivePetroleum-legacy-master.zip",
+      "purpose": "local reference, not a redistribution license"
+    }
+  ],
+  "restoration": "Clone repository.bundle to a new directory; copy restore/libs and restore/run into that checkout. Do not copy development JARs into production."
+}

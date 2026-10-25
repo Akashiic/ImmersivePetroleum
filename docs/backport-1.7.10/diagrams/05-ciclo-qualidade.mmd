@@ -1,0 +1,18 @@
+flowchart TD
+    A["Congelar comportamento-fonte<br/>e dependência exata"] --> B["Definir estado, contabilidade<br/>de recursos e fronteiras de falha"]
+    B --> C["Implementar domínio<br/>+ adaptadores Forge"]
+    C --> D["Auditoria adversarial<br/>+ testes focados"]
+    D --> E{"Bloqueio<br/>concreto?"}
+    E -- sim --> F["Reproduzir o defeito<br/>e corrigir a camada responsável"]
+    F --> D
+    E -- não --> G["Campanhas de runtime<br/>multi-boot em servidor dedicado<br/>+ regressões afetadas"]
+    G --> H{"Evidência de<br/>runtime passou?"}
+    H -- não --> F
+    H -- sim --> I["Cliente Angelica:<br/>sonda de estado GL + screenshot inspecionado"]
+    I --> J{"Evidência de<br/>cliente passou?"}
+    J -- não --> F
+    J -- sim --> K["Aprovar escopo limitado<br/>e registrar portões restantes"]
+    K --> L["Commit, tag, build limpo,<br/>hashes SHA-256 do artefato"]
+    L --> M["Próxima família<br/>ou qualificação final"]
+    classDef gate fill:#fff3cd,stroke:#b8860b,color:#111
+    class E,H,J gate

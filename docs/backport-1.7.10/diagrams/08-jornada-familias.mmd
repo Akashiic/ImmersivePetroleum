@@ -1,0 +1,48 @@
+flowchart TB
+    subgraph T1["Camada 1 · Fundação industrial"]
+        RV["Reservatórios<br/>(gênese + persistência)"]:::found
+        FL["Fluidos<br/>(10 fluidos)"]:::found
+        WL["Well / WellPipe"]:::q
+        PJ["Pumpjack<br/>(multibloco 32 blocos + TESR)"]:::q
+        DT["Distillation Tower<br/>(137 blocos)"]:::q
+    end
+    subgraph T2["Camada 2 · Refino moderno"]
+        DR["Derrick<br/>(59 partes + grade direcional)"]:::q
+        SS["Seismic Survey"]:::q
+        OT["Oil Tank"]:::q
+        CK["Coker custom"]:::q
+        HY["Hydrotreater"]:::q
+        CA["Catalyst Refinery<br/>(adaptador IE17)"]:::q
+    end
+    subgraph T3["Camada 3 · Utilidades"]
+        LU["Lubrificação<br/>+ IDs de poção IE"]:::q
+        GG["Gas Generator"]:::q
+        FS["Flarestack"]:::q
+        PR["Projector"]:::q
+        AS["Asphalt"]:::q
+        AL["Auto Lubricator"]:::q
+        MC["Materiais: cera/vela/<br/>couro ersatz/petcoke"]:::q
+    end
+    subgraph T4["Camada 4 · Mobilidade e acabamento"]
+        MB["Motorboat<br/>(5 upgrades · 2 passageiros)"]:::q
+        ML["Gasoline Bottle / Molotov"]:::q
+        NEI["NEI nativo + catálogos<br/>(CraftTweaker/MineTweaker)"]:::q
+        UP["Oil Can<br/>(sem registro de qualificação)"]:::gap
+    end
+    RV --> SS
+    RV --> WL
+    WL --> DR
+    WL --> PJ
+    FL --> PJ
+    PJ --> OT
+    PJ --> DT
+    DT --> CK
+    DT --> HY
+    FL --> CA
+    CK --> MC
+    DT --> LU
+    FL --> GG
+    FL --> ML
+    classDef found fill:#d0e4ff,stroke:#1d5fa8,color:#111
+    classDef q fill:#d4edda,stroke:#2e7d32,color:#111
+    classDef gap fill:#fff3cd,stroke:#b8860b,color:#111
